@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>CURD HTTP</title>
+</head>
+<body>
+    <header class="bg-primary text-white p-4 mb-4">
+        <h1 class="text-center">CURD HTTP </h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="postForm">
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input type="text" required class="form-control" id="title">
+                            </div>
+                            <div class="form-group">
+                                <label for="title">Content</label>
+                                <textarea class="form-control" required id="content"> </textarea>
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-primary" type="submit" id="submitBtn">Content Post</button>
+                                <button class="btn btn-primary d-none" type="button" id="updateBtn">Update Post</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6" id="postContainer">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/user.js"></script>
+</body>
+</html>
